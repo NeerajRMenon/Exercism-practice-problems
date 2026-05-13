@@ -17,3 +17,13 @@ personal_top_three() should write the player's top scores to
 output
 output[0]
 ...
+
+LEARNING
+
+size_t is a special unsigned integer data type defined in the standard library <stddef.h>
+
+On different computers, the amount of memory available varies.
+On an old 16-bit system, an int might only handle numbers up to 32,767.
+On a 64-bit system, memory addresses are much larger.
+
+If you used a standard int to count the elements in a massive array, you might "run out of numbers" (integer overflow) before you finished counting the array. size_t is "platform-dependent," meaning the compiler automatically makes it the perfect size for the hardware you are using.
